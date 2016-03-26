@@ -1,0 +1,21 @@
+/* Spring
+***************************************************************/
+body {
+  font-family: 'Josefin Sans', serif;
+}
+
+h1, .h1,
+h2, .h3,
+h3, .h4,
+h4, .h5,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Pacifico', sans-serif;
+  font-weight: 700;
+}
+
+#intro {
+  background: url("../img/food.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
