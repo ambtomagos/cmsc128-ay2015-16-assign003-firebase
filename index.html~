@@ -30,10 +30,11 @@
     <!-- Styles -->
     <link href="css/anthem.css" rel="stylesheet">
     <link href="css/anthem-themes.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Loading bar -->
     <script src="js/pace.min.js"></script>
-    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
     <!-- HTML5 shiv for IE8 support -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -76,7 +77,82 @@
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active wow" id="posts">
                 
-                
+                <section class="post featured wow fadeIn">
+                  <header>
+                    <h2 class="title">
+                      Krabby Patty
+                    </h2>
+                    
+                  </header><br />
+                  <div class="description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor.
+                    </p>
+                  </div>
+                  <footer>
+                    <p class="meta">
+                      Submitted by <span class="tags">Spongebob Squarepants</span> in <span class="tags">American</span> ● <span class="tags">April 13, 2015</span>
+                    </p>
+                  </footer>
+                </section>
+
+                <section class="post wow fadeIn">
+                  <header>
+                    <h1 class="title">
+                      Secret Ingredient Soup
+                    </h1>
+                    
+                  </header><br />
+                  <div class="description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor.
+                    </p>
+                  </div>
+                  <footer>
+                    <p class="meta">
+                      Submitted by <span class="tags">Mr. Ping</span> in <span class="tags">Chinese</span> ● <span class="tags">April 13, 2015</span>
+                    </p>
+                  </footer>
+                </section>
+
+                <section class="post wow fadeIn">
+                  <header>
+                    <h2 class="title">
+                      Omurice
+                    </h2>
+                    
+                  </header><br />
+                  <div class="description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor.
+                    </p>
+                  </div>
+                  <footer>
+                    <p class="meta">
+                      Submitted by <span class="tags">Park Ha</span> in <span class="tags">Korean</span> ● <span class="tags">April 13, 2015</span>
+                    </p>
+                  </footer>
+                </section>
+
+                <section class="post wow fadeIn">
+                  <header>
+                    <h2 class="title">
+                      Itlog na Maalat at Kamatis
+                    </h2>
+                    
+                  </header><br />
+                  <div class="description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor.
+                    </p>
+                  </div>
+                  <footer>
+                    <p class="meta">
+                      Submitted by <span class="tags">Juan Dela Cruz</span> in <span class="tags">Filipino Gourmet</span> ● <span class="tags">April 13, 2015</
+                    </p>
+                  </footer>
+                </section>
+
               </div>
               <div role="tabpanel" class="tab-pane wow" id="addrecipe">
                 
@@ -92,23 +168,23 @@
             <form>
               <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" placeholder="Spaghetti with Extra Giant Meatballs and Cheese Hurricane" class="form-control" id="title">
+                <input type="text" placeholder="Spaghetti with Extra Giant Meatballs and Cheese Hurricane" class="form-control" name="title">
               </div>
               <div class="form-group">
                 <label for="classification">Classification</label>
-                <input type="text" placeholder="Asian, European, etc." class="form-control" id="classification">
+                <input type="text" placeholder="Asian, European, etc." class="form-control" name="classification">
               </div>
               <div class="form-group">
                 <label for="recipe">Recipe</label>
-                <textarea class="form-control" id="recipe" placeholder="Contents of recipe..." rows="10"></textarea>
+                <textarea class="form-control" name="recipe" placeholder="Contents of recipe..." rows="10"></textarea>
               </div>
               <div class="form-group">
                 <label for="name">Name of Sender</label>
-                <input type="text" placeholder="Peter Parker" class="form-control" id="name">
+                <input type="text" placeholder="Peter Parker" class="form-control" name="name">
               </div>
 
               <div class="form-group">
-                <div id="submit"><input class="btn btn-default" type="submit" value="Submit"></div>
+                <input class="btn btn-default" type="submit" value="Submit">
               </div>
             </form>
 
@@ -134,7 +210,6 @@
     <script src="js/parallax.js"></script>
     <script src="js/smoothScroll.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/firebase.js"></script>
 
     <script>
       new WOW().init();
